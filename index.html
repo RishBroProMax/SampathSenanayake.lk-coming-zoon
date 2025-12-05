@@ -1,82 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sampath Senanayake | Coming Soon</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #dbe9ff, #ffffff);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .glass-box {
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: rgba(255, 255, 255, 0.25);
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      padding: 50px 60px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-      animation: fadeUp 0.9s ease;
-      max-width: 500px;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      color: #0a4dbf;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #0a4dbf;
-      opacity: 0.8;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 25px;
-      font-size: 0.9rem;
-      opacity: 0.75;
-    }
-
-    footer a {
-      color: #0a4dbf;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinhala Sampath - Coming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#93c5fd'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-
-  <div class="glass-box">
-    <h1>Coming Soon</h1>
-    <p>The official website of <strong>Sampath Senanayake</strong> is being crafted.</p>
-  </div>
-
-  <footer>
-    Design & Developed by <a href="https://imrishmika.dev" target="_blank">imrishmika.dev</a>
-  </footer>
-
+<body class="min-h-screen bg-white">
+    <main class="flex flex-col items-center justify-center min-h-screen p-6">
+        <div class="w-full max-w-md text-center">
+            <h1 class="text-4xl font-light text-gray-900 mb-4">Coming Soon</h1>
+            <p class="text-gray-500 mb-16">We're working on something amazing. Stay tuned!</p>
+            <footer class="text-xs text-gray-400 mt-8">
+                Design & Developed by <a href="https://imrishmika.dev" class="underline">imrishmika.dev</a>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
 </body>
 </html>
